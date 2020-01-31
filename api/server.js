@@ -13,7 +13,7 @@ server.use(cors());
 server.use("/api/holds", holdsRouter);
 
 server.get("/", (req, res) => {
-  res.send("sweet send");
+  res.status(200).json({ message: "sweet send" });
 });
 
 module.exports = server;
